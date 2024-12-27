@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+    <link rel="stylesheet" href="./home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Details</h1>
+        <div class="file-upload">
+            <label for="image" class="circle">
+                <span>Upload Image</span>
+                <input type="file" id="image" style="display: none;" />
+                <img id="pic" alt="No Picture Available">
+            </label>
+            <button id="upload-btn">Upload</button>
+        </div>
+        <table>
+            <tr>
+                <th>ID</th>
+                <td id="id">12345</td> 
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td id="name">John Doe</td> 
+            </tr>
+            <tr>
+                <th>Salary</th>
+                <td id="sal">$50,000</td> 
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td id="email">johndoe@example.com</td> 
+            </tr>
+            <tr>
+                <th>Contact</th>
+                <td id="contact">9876543210</td> 
+            </tr>
+        </table>
+        <div class="crud-buttons">
+            <button id="update-btn" class="btn-primary">Update</button>
+            <button id="delete-btn" class="btn-danger">Delete</button>
+        </div>
+    </div>
+    <script src="./home.js"></script>
+</body>
+</html>
